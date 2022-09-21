@@ -1,89 +1,160 @@
+body,
+p,
+h1,
+h2,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
 body {
-    background-image: url("./src/assets/background.jpg");
-    background-repeat: repeat;
+	background-color: #EBEBEB;
+	font-family: sans-serif;
+}
+
+.wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #ffffff;
+	width: 1100px;
+	margin: 0 auto;
+}
+
+.footer-center {
+	width: 1100px;
+	margin: 0 auto;
+}
+
+header,
+footer {
+	background-color: #242424;
+}
+
+nav {
+	min-height: 50px;
+	display: flex;
+	align-items: center;
+	width: 1100px;
+	margin: 0 auto;
+}
+
+nav a {
+	display: block;
+	padding: 0 20px;
+	font-size: 19px;
+	box-sizing: border-box;
+}
+
+nav a:link,
+nav a:visited {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+nav a:hover,
+nav a.active {
+	background-color: #585858;
+	line-height: 50px;
+}
+
+aside {
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	padding: 20px 20px 0 20px;
+	box-sizing: border-box;
+
+}
+
+aside h2 {
+	font-size: 17px;
+	margin-bottom: 10px;
+}
+
+aside p,
+aside li {
+	font-size: 13px;
+	text-align: justify;
+	margin: 0 0 10px 0;
+}
+
+aside ul {
+	list-style-type: none
 }
 
 main {
-    width: 800px;
-    margin: 50px auto;
-    padding: 50px;
-    border-radius: 50px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgba(60, 162, 165, 0.7);
-    color: rgb(28, 89, 54);
+	min-height: 600px;
+	padding: 20px 0;
+	text-align: justify;
+	width: 495px;
+	box-sizing: border-box;
 }
 
 main h1 {
-    text-align: center;
+	font-size: 21px;
 }
 
-.pic img {
-    margin-right: 30px;
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    float: left;
+main h2 {
+	font-size: 19px;
+	margin: 20px 0;
 }
 
-.description {
-    font-size: 24px;
-    color: rgb(28, 89, 54);
-    text-align: justify;
+main p {
+	font-size: 13px;
+	margin: 10px 0;
 }
 
-.contact-me p {
-    text-align: left;
-    font-size: 30px;
+main img {
+	width: 495px;
+	height: 375px;
 }
 
-.flexbox {
-    display: flex;
-    justify-content:center ;
-    align-items: center;
+footer {
+	display: flex;
+	flex-direction: column;
+	font-size: 13px;
+	text-align: center;
+	color: #ffffff;
+	min-height: 281px;
 }
 
-a {
-    color: black;
-    font-size: 18px;
-    text-decoration: none;
+.footer-center {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-top: 30px;
+	box-sizing: border-box;
 }
 
-.ig {
-    width: 300px;
-    height: 70px;
-    background-color: white;
-    margin-left: 20px;
-    margin-right: 20px;
-    border-radius: 20px;
+.copyright {
+	min-height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.ig img {
-    width: 50px;
-    height: 50px;
-    padding: 10px;
+aside img {
+	height: 168px;
+	width: 270px;
+	display: inline-block;
+	margin: 10px 0;
 }
 
-.ig a {
-    display: inline;
-    vertical-align: 30px;
+.footer-wrp {
+	width: 250px;
+	background-color: #EBEBEB;
+	color: #000000;
+	min-height: 200px;
 }
 
-.tg {
-    width: 300px;
-    height: 70px;
-    background-color: white;
-    margin-left: 20px;
-    margin-right: 20px;
-    border-radius: 20px;
+.footer-wrp hr {
+	width: 248px;
 }
 
-.tg img {
-    width: 50px;
-    height: 50px;
-    padding: 10px;
+.footer-wrp h2 {
+	margin: 15px 0 10px 0;
 }
 
-.tg a {
-    display: inline;
-    vertical-align: 30px;
+.footer-center p {
+	font-size: 12px;
 }
