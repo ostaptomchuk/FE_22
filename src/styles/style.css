@@ -1,175 +1,64 @@
+body {
+    background: #3B3F45;
+}
+
 header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 120px;
-    isolation: isolate;
-    height: 80px;
+    background: #4A4F56;
 }
 
-.header-menu {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    gap: 40px;
+.heading {
+    text-align: center;
+    color: #FF8984;
+    padding: 5px 0;
+}
+
+h1,
+h3,
+span,
+li {
+    font-family: 'Roboto';
+    font-style: sans-serif;
+}
+
+.container {
+    margin: 20px auto;
+    width: 534px;
+}
+
+ul {
+    margin-left: -40px;
+    color: #ffffff;
+    width: 100%;
+  }
+
+li {
     height: 30px;
+    font-size: 24px;
+    line-height: 21px;  
+    transition: all .1s ease-in;
+    background: #88839E;
+    transition: all 1s ease-in;
+    padding: 12px 10px;
 }
 
-a {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    letter-spacing: 0.02em;
-    color: #828282;
-    text-decoration: none;
+li:nth-child(even) {
+    background: #7A7593;
 }
 
-.active {
-    color: #070707;
+li:hover {
+    background: #625E77;
+    border: 3px solid #e5e5e5;
 }
 
-hr {
-    width: 970px;
-    height: 0px;
-    left: 235px;
-    bottom: 0px;
-    border: 1px solid #828282;
+li span {
+    font-size: 11px;
 }
 
-.first-screen {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 50px;
-    width: 55%;
-    padding: 0;
-    margin: 0 auto;
-}
-
-h1 {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 65px;
-    color: #070707;
-}
-
-.about-me-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 100px 480px;
-    gap: 50px;
-    isolation: isolate;
-    background: #F6F6F6;
-}
-
-h2 {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 34px;
-    line-height: 46px;
+ul + .appetit {
+    height: 40px;
     text-align: center;
-    color: #070707;
-}
-
-.text {
-    width: 480px;
-    height: 210px;
-}
-
-p,
-span {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    text-align: center;
-    color: #070707;
-}
-
-.skills {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 22px;
-    gap: 50px;
-    height: 564px;
-
-}
-
-.product-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 97px;
-    width: 970px;
-    height: 230px;
-}
-
-.product {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px;
-    gap: 25px;
-    width: 80px;
-    height: 143px;
-}
-
-.ps,
-.ai,
-.ae,
-.figma {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 60px;
-    width: 170px;
-    height: 230px;
-}
-
-.product span {
-    color: #828282;
-}
-
-.portfolio {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 59px 235px;
-    gap: 50px;
-    isolation: isolate;
-    background: #F6F6F6;
-}
-
-.pages {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px;
-    gap: 70px;
-    width: 970px;
-    height: 1978px;
-}
-
-.fashion-store,
-.reebok-store,
-.braun-landing-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px;
-    gap: 40px;
+    color: #FF8984;
+    background: #4A4F56;
+    margin: 50px auto;
+    padding: 12px 10px;
 }
