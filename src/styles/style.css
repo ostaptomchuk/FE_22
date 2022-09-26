@@ -1,9 +1,9 @@
 body {
-    background: #3B3F45;
+    background-color: #3B3F45;
 }
 
 header {
-    background: #4A4F56;
+    background-color: #4A4F56;
 }
 
 .heading {
@@ -58,7 +58,7 @@ ul + .appetit {
     height: 40px;
     text-align: center;
     color: #FF8984;
-    background: #4A4F56;
+    background-color: #4A4F56;
     margin: 50px auto;
     padding: 12px 10px;
 }
