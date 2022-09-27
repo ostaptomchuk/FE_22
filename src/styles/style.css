@@ -16,7 +16,7 @@ h1 {
     height: 80px;
 }
 
-.header-holder { 
+.header-holder {
     margin: 17px 0;
 }
 
@@ -35,10 +35,10 @@ h1 {
 .meniushka li {
     display: inline-block;
     margin-right: 20px;
+    color: #2F281E;
 }
 
 .buttons-holder {
-    display: inline-block;
     float: right;
 }
 
@@ -78,7 +78,7 @@ h1 {
 .hero {
     max-width: 1200px;
     width: 100%;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 .hero-wrapper {
@@ -90,7 +90,7 @@ h1 {
     width: 100%;
     float: left;
     margin: 97px 56px 0 0;
-    }
+}
 
 .hero-description p {
     margin-bottom: 20px;
@@ -99,7 +99,6 @@ h1 {
     font-size: 18px;
     line-height: 28px;
     color: #544837;
-    float: right;
 }
 
 .get-started {
@@ -109,5 +108,5 @@ h1 {
 }
 
 .hero-image-holder {
-    display: block;
+    float: right;
 }
