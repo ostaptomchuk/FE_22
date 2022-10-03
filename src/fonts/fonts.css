@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Farro';
+    src: url('../fonts/Farro/farro-bold-webfont.woff2') format('woff2'),
+         url('../fonts/Farro/farro-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Farro';
+    src: url('../fonts/Farro/farro-light-webfont.woff2') format('woff2'),
+         url('../fonts/Farro/farro-light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Farro';
+    src: url('../fonts/Farro/farro-medium-webfont.woff2') format('woff2'),
+         url('../fonts/Farro/farro-medium-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Farro';
+    src: url('../fonts/Farro/farro-regular-webfont.woff2') format('woff2'),
+         url('../fonts/Farro/farro-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+
+}

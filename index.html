@@ -5,61 +5,107 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./src/images/favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Francois+One&family=PT+Sans:wght@400;700&family=Staatliches&family=Tourney:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./src/fonts/fonts.css">
     <link rel="stylesheet" href="./src/styles/style.css">
-    <title>Productly</title>
+    <title>Lesson 9</title>
 </head>
 
 <body>
-
     <header class="header">
         <div class="header-holder">
-            <div class="img-logo-holder">
-                <img src="./src/images/logo.svg" alt="image logo">
-            </div>
-
-            <nav class="meniushka">
+            <span>ENG</span>
+            <nav class="navigation">
                 <ul>
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">Customers</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Resources</a></li>
+                    <li>Documentation</li>
+                    <li>Who's using</li>
                 </ul>
             </nav>
-
-            <div class="buttons-holder">
-                <button class="sign-in">
-                    Sign In
-                </button>
-                <button class="general-button sign-up">
-                    Sign Up
-                </button>
+            <div class="header-logo-holder">
+                <img src="./src/images/company-logo-black.svg" alt="company logo">
             </div>
+
         </div>
     </header>
 
-    <main class="main">
-        <div class="hero">
-            <div class="hero-wrapper">
-                <div class="hero-description">
-                    <h1>The Design Thinking superpowers</h1>
-                    <p>Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to
-                        imagine
-                        your next user experience.</p>
-                    <button class="general-button get-started">Get started</button>
-                </div>
-
-                <div class="hero-image-holder">
-                    <img src="./src/images/image-hero.svg" alt="hero image">
-                </div>
+    <main>
+        <section class="introduction">
+            <div class="heading">
+                <h2>Introduction</h2>
+                <sup>Chapter 1</sup>
             </div>
-        </div>
-    </main>
+            <div class="paragraph-holder">
+                <p>Welcome to the very start of your React Native journey! If you're looking for environment setup
+                    instructions, they've moved to <u>their own section.</u> Continue reading for an introduction to the
+                    documentation, Native Components, React, and more!</p>
+            </div>
+        </section>
 
+        <section class="core-components">
+            <div class="heading">
+                <h2>Core components</h2>
+                <sup>Chapter 2</sup>
+            </div>
+            <div class="paragraph-holder">
+                <p>React Native is an open source framework for building Android and iOS applications using React and
+                    the app platform’s native capabiles. With React Native, you use JavaScript to access your platform’s
+                    APIs as well as to describe the appearance and behavior of your UI using React components: <i>bundles
+                    of reusable, nestable code.</i> You can learn more about React in the next section. But first, let’s
+                    cover how components work in React Native.</p>
+            </div>
+        </section>
+
+        <section class="react-fundamentals">
+            <div class="heading">
+                <h2>React fundamentals</h2>
+                <sup>Chapter 3</sup>
+            </div>
+            <div class="paragraph-holder">
+                <p>React Native runs on <u>React,</u> a popular open source library for building user interfaces with
+                    JavaScript. To make the most of React Native, it helps to understand React itself. This section can
+                    get you started or can serve as a refresher course.
+                </p>
+                <p>We’re going to cover the core concepts behind React:</p>
+                <p><b>+ components.</b> The rest of this introduction to React uses cats in its examples: friendly,
+                    approachable creatures that need names and a cafe to work in.</p>
+                <p> <b>+ JSX.</b> React and React Native use JSX, a syntax that lets you write elements inside JavaScript like
+                    so: &lt;<Text>&gt Hello, I am your cat!&lt</Text>&gt.</p>
+                <p>The React docs have <u>a comprehensive guide</u> to JSX you can refer to learn even more. Because JSX is
+                    JavaScript, you can use variables inside it. Here you are declaring a name for the cat, name, and
+                    embedding it with curly braces inside <Text></Text>
+                </p>
+                <p> <b>+ props.</b> Props is short for “properties”.
+
+                </p>
+                <p> <b>+ state.</b> While you can think of props as arguments you use to configure how components render, state
+                    is like a component’s personal data storage. State is useful for handling data that changes over
+                    time or that comes from user interaction. State gives your components memory!
+                </p>
+
+            </div>
+        </section>
+
+        <section class="handling-text-input">
+            <div class="heading">
+                <h2>Handling text input</h2>
+                <sup>Chapter 4</sup>
+            </div>
+            <div class="paragraph-holder">
+                <p>TextInput is a Core Component that allows the user to enter text. It has an <i>onChangeText</i> prop that
+                    takes a function to be called every time the text changed, and an onSubmitEditing prop that takes a
+                    function to be called when the text is submitted.
+                </p>
+                <p>For example, let's say that as the user types, you're translating their words into a different
+                    language. In this new language, every single word is written the same way: 🍕. So the sentence
+                    "Hello there Bob" would be translated as "🍕 🍕".
+                </p>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
