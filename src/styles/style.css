@@ -12,34 +12,37 @@ h1 {
 .header {
     max-width: 1440px;
     width: 100%;
-    margin: 0 auto;
     height: 80px;
+    margin: 0 auto;
 }
 
 .header-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     margin: 17px 0;
+    
 }
 
 .img-logo-holder {
-    float: left;
-    margin-right: 300px;
+
 }
 
-.meniushka {
-    display: inline-block;
-    width: 400px;
+.menu {
+    text-align: center;
     margin-right: 220px;
     margin-top: 10px;
-}
-
-.meniushka li {
-    display: inline-block;
-    margin-right: 20px;
     color: #2F281E;
 }
 
-.buttons-holder {
-    float: right;
+.meniushka {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.meniushka li {
+    margin-right: 20px;
 }
 
 .general-button {
@@ -109,4 +112,36 @@ h1 {
 
 .hero-image-holder {
     float: right;
+}
+
+.design-tools {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.design-tools-items {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.design-tools-item {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer {
+    max-width: 1200px;;
+    width: 100%;
+    height: 209px;
+    margin: 0 auto;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
 }
