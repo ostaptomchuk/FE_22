@@ -9,6 +9,13 @@ h1 {
     margin-bottom: 30px;
 }
 
+h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+}
+
 .header {
     max-width: 1440px;
     width: 100%;
@@ -22,10 +29,6 @@ h1 {
     justify-content: space-between;
     align-items: center;
     margin: 17px 0;
-    
-}
-
-.img-logo-holder {
 
 }
 
@@ -86,12 +89,13 @@ h1 {
 
 .hero-wrapper {
     margin: 70px 0 100px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .hero-description {
     max-width: 500px;
     width: 100%;
-    float: left;
     margin: 97px 56px 0 0;
 }
 
@@ -110,30 +114,62 @@ h1 {
     line-height: 24px;
 }
 
-.hero-image-holder {
-    float: right;
-}
-
 .design-tools {
     max-width: 1440px;
     width: 100%;
+    margin: 0 auto 104px;
+}
+
+.design-tools-wrapper h2{
     margin: 0 auto;
+    width: 539px;
+    margin-bottom: 50px;
+}
+
+.design-tools-wrapper button {
+    text-align: center;
+   
 }
 
 .design-tools-items {
+    margin: 0 auto 70px;
+    width: 1200px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    
 }
 
 .design-tools-item {
-    flex-direction: row;
+    width: 270px;
+    margin-right: 2 0px;
+}
+
+.benefits {
+    margin-bottom: 100px;
+}
+
+.benefits-wrapper {
+    margin: 0 auto 100px;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
+.benefits-text-holder {
+    width: 525px;
+}
+
+.benefits-wrapper-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 .footer {
-    max-width: 1200px;;
+    max-width: 1200px;
+    ;
     width: 100%;
     height: 209px;
     margin: 0 auto;
