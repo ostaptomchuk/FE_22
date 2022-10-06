@@ -120,15 +120,36 @@ h2 {
     margin: 0 auto 104px;
 }
 
-.design-tools-wrapper h2{
+.design-tools-wrapper h2 {
     margin: 0 auto;
     width: 539px;
     margin-bottom: 50px;
 }
 
-.design-tools-wrapper button {
+.design-tools-wrapper .general-button {
+    display: flex;
+    justify-content: center;
+    width: 130px;
     text-align: center;
-   
+    margin: auto
+}
+
+.benefits-ulka {
+    margin-left: -40px;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.benefits-ulka li {
+    width: 440px;
+    margin-bottom: 10px;
+}
+
+.benefits-ulka li::before {
+    content: url(../images/list-icon.svg);
+    margin-right: 30px;
+    float: left;
+
 }
 
 .design-tools-items {
@@ -137,7 +158,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    
+
 }
 
 .design-tools-item {
@@ -162,6 +183,19 @@ h2 {
     width: 525px;
 }
 
+.benefits-text-holder h2 {
+    text-align: left;
+}
+
+.benefits-text-holder strong {
+    font-weight: 700;
+    padding-bottom: 250px;
+}
+
+.benefits-text-holder p {
+    margin-bottom: 40px;
+}
+
 .benefits-wrapper-reverse {
     display: flex;
     flex-direction: row-reverse;
@@ -169,7 +203,6 @@ h2 {
 
 .footer {
     max-width: 1200px;
-    ;
     width: 100%;
     height: 209px;
     margin: 0 auto;
@@ -178,6 +211,29 @@ h2 {
 .footer-wrapper {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: space-between;
+}
+
+.footer-logo-holder {
+    padding-top: 10px;
+    margin-right: 130px;
+}
+
+.footer-links,
+.footer-stuff {
+    width: 118px;
+    margin-right: 130px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.links-holder,
+.stuff-holder {
+    text-align: left;
+    text-decoration: none;
+}
+
+.footer-registration {
+    width: 340px;
 }
