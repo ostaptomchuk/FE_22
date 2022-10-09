@@ -1,239 +1,215 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 'Montserrat';
-    color: #2F281E;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+    color: #000000;
 }
 
-h1 {
-    font-size: 44px;
-    line-height: 54px;
-    margin-bottom: 30px;
+a {
+    text-decoration: none;
+    color: #000000;
 }
 
-h2 {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 44px;
-    text-align: center;
+li {
+    list-style: none;
 }
 
 .header {
-    max-width: 1440px;
-    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #ffffff;
     height: 80px;
-    margin: 0 auto;
+    margin-bottom: 70px;
 }
 
 .header-holder {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin: 17px 0;
-
-}
-
-.menu {
-    text-align: center;
-    margin-right: 220px;
-    margin-top: 10px;
-    color: #2F281E;
-}
-
-.meniushka {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.meniushka li {
-    margin-right: 20px;
-}
-
-.general-button {
-    background-color: #FF9900;
-    border: none;
-    border-radius: 4px;
-    font-weight: 600;
-    padding: 13px 0;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 16px;
-}
-
-.sign-in {
-    padding: 13px 0px;
-    width: 110px;
-    height: 46px;
-    background-color: #FFFFFF;
-    border: 1px solid #BCD0E5;
-    border-radius: 4px;
-    font-weight: 600;
-    font-size: 16px;
-    color: #2F281E;
-    margin-right: 20px;
-}
-
-.sign-up {
-    box-sizing: border-box;
-    width: 110px;
-    height: 46px;
-    line-height: 20px;
-    color: #FFFFFF;
-    font-size: 16px;
-}
-
-.hero {
     max-width: 1200px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
     margin: 0 auto;
 }
 
-.hero-wrapper {
-    margin: 70px 0 100px;
-    display: flex;
-    flex-wrap: wrap;
+.nav-lang {
+    font-family: 'Tourney';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    margin: 28px 0 28px;
 }
 
-.hero-description {
-    max-width: 500px;
-    width: 100%;
-    margin: 97px 56px 0 0;
-}
 
-.hero-description p {
-    margin-bottom: 20px;
-    height: 91px;
-    font-weight: 400;
-    font-size: 18px;
+.nav-list ul {
+    margin: 24px 0;
+    display: inline-flex;
+    margin-left: -450px;
+    font-family: 'Staatliches';
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 22px;
     line-height: 28px;
-    color: #544837;
+    letter-spacing: 0.03em;
 }
 
-.get-started {
-    width: 180px;
-    height: 50px;
-    line-height: 24px;
+sup {
+    font-family: 'Farro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
 }
 
-.design-tools {
-    max-width: 1440px;
-    width: 100%;
-    margin: 0 auto 104px;
+.nav-list li:first-child:after {
+    content: ' / ';
 }
 
-.design-tools-wrapper h2 {
-    margin: 0 auto;
-    width: 539px;
-    margin-bottom: 50px;
+.header-logo-holder {
+    margin: 8px 0;
 }
 
-.design-tools-wrapper .general-button {
+.general-wrapper {
+    padding-top: 100px;
     display: flex;
-    justify-content: center;
-    width: 130px;
-    text-align: center;
-    margin: auto
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
 }
 
-.benefits-ulka {
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.aside {
+    position: relative;
+    width: 30%;
+}
+
+.aside .sidebar {
+    width: 350px;
+    position: sticky;
+    top: 80px;
     margin-left: -40px;
-    font-size: 16px;
-    line-height: 26px;
 }
 
-.benefits-ulka li {
-    width: 440px;
-    margin-bottom: 10px;
+.sidebar li {
+    font-family: 'Francois One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #000000;
+    border-bottom: 2px solid grey;
+    margin-bottom: 60px;
 }
 
-.benefits-ulka li::before {
-    content: url(../images/list-icon.svg);
-    margin-right: 30px;
-    float: left;
-
+#introduction,
+#core-components,
+#react-fundamentals,
+#handling-text-input {
+    width: 785px;
 }
 
-.design-tools-items {
-    margin: 0 auto 70px;
-    width: 1200px;
+.heading-divider {
+    margin-bottom: -20px;
+}
+
+.heading-holder {
+    font-family: 'Francois One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.marker {
+    background-color: #DADADA;
+}
+
+.whoos-using-holder .heading-holder {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
+    flex-direction: row;
 }
 
-.design-tools-item {
+.using-divider {
+    margin: 30px 30px 0 0;
+}
+
+.products-holder {
+    display: flex;
+    justify-items: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.flip-card {
     width: 270px;
-    margin-right: 2 0px;
+    height: 180px;
+    border-radius: 8px;
+    margin: 0 20px 20px 0;
 }
 
-.benefits {
-    margin-bottom: 100px;
-}
-
-.benefits-wrapper {
-    margin: 0 auto 100px;
-    max-width: 1200px;
+.product-item {
+    position: relative;
     width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .product-item {
+    transform: rotateX(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.benefits-text-holder {
-    width: 525px;
-}
-
-.benefits-text-holder h2 {
-    text-align: left;
-}
-
-.benefits-text-holder strong {
-    font-weight: 700;
-    padding-bottom: 250px;
-}
-
-.benefits-text-holder p {
-    margin-bottom: 40px;
-}
-
-.benefits-wrapper-reverse {
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.footer {
-    max-width: 1200px;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
     width: 100%;
-    height: 209px;
-    margin: 0 auto;
+    height: 100%;
+    backface-visibility: hidden;
 }
 
-.footer-wrapper {
+.flip-card-front {
+
+    background: #E6E6E6;
+    border-radius: 8px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    align-items: center;
 }
 
-.footer-logo-holder {
-    padding-top: 10px;
-    margin-right: 130px;
+.flip-card-back {
+    display: flex;
+    justify-items: center;
+    background: #1A1A1A;
+    transform: rotateX(180deg);
+    border-radius: 8px;
 }
 
-.footer-links,
-.footer-stuff {
-    width: 118px;
-    margin-right: 130px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-}
-
-.links-holder,
-.stuff-holder {
-    text-align: left;
-    text-decoration: none;
-}
-
-.footer-registration {
-    width: 340px;
+.flip-card-back img {
+    filter: invert(100);
 }
