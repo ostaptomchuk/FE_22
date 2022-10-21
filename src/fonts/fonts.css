@@ -1,34 +1,10 @@
 @font-face {
-    font-family: 'Farro';
-    src: url('./Farro/farro-light-webfont.eot');
-    src: url('./Farro/farro-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('./Farro/farro-light-webfont.woff2') format('woff2'),
-         url('./Farro/farro-light-webfont.woff') format('woff'),
-         url('./Farro/farro-light-webfont.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'Francois One';
-    src: url('.Francois One/francoisone-regular-webfont.eot');
-    src: url('.Francois One/francoisone-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('.Francois One/francoisone-regular-webfont.woff2') format('woff2'),
-         url('.Francois One/francoisone-regular-webfont.woff') format('woff'),
-         url('.Francois One/francoisone-regular-webfont.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'PT Sans';
-    src: url('.PT Sans/ptsans-regular-webfont.eot');
-    src: url('.PT Sans/ptsans-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('.PT Sans/ptsans-regular-webfont.woff2') format('woff2'),
-         url('.PT Sans/ptsans-regular-webfont.woff') format('woff'),
-         url('.PT Sans/ptsans-regular-webfont.ttf') format('truetype');
+    font-family: 'Delius';
+    src: url('./Delius/delius-regular-webfont.eot');
+    src: url('./Delius/delius-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./Delius/delius-regular-webfont.woff2') format('woff2'),
+         url('./Delius/delius-regular-webfont.woff') format('woff'),
+         url('./Delius/delius-regular-webfont.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 
@@ -36,36 +12,24 @@
 
 @font-face {
     font-family: 'Roboto';
-    src: url('.Roboto/roboto-medium-webfont.eot');
-    src: url('.Roboto/roboto-medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('.Roboto/roboto-medium-webfont.woff2') format('woff2'),
-         url('.Roboto/roboto-medium-webfont.woff') format('woff'),
-         url('.Roboto/roboto-medium-webfont.ttf') format('truetype');
+    src: url('./Roboto/roboto-medium-webfont.eot');
+    src: url('./Roboto/roboto-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./Roboto/roboto-medium-webfont.woff2') format('woff2'),
+         url('./Roboto/roboto-medium-webfont.woff') format('woff'),
+         url('./Roboto/roboto-medium-webfont.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'Staatliches';
-    src: url('.Staatliches/staatliches-regular-webfont.eot');
-    src: url('.Staatliches/staatliches-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('.Staatliches/staatliches-regular-webfont.woff2') format('woff2'),
-         url('.Staatliches/staatliches-regular-webfont.woff') format('woff'),
-         url('.Staatliches/staatliches-regular-webfont.ttf') format('truetype');
+    font-family: 'Roboto';
+    src: url('./Roboto/roboto-regular-webfont.eot');
+    src: url('./Roboto/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./Roboto/roboto-regular-webfont.woff2') format('woff2'),
+         url('./Roboto/roboto-regular-webfont.woff') format('woff'),
+         url('./Roboto/roboto-regular-webfont.ttf') format('truetype');
     font-weight: 400;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'Tourney';
-    src: url('.Tourney/tourney-variablefont_wdthwght-webfont.eot');
-    src: url('.Tourney/tourney-variablefont_wdthwght-webfont.eot?#iefix') format('embedded-opentype'),
-         url('.Tourney/tourney-variablefont_wdthwght-webfont.woff2') format('woff2'),
-         url('.Tourney/tourney-variablefont_wdthwght-webfont.woff') format('woff'),
-         url('.Tourney/tourney-variablefont_wdthwght-webfont.ttf') format('truetype');
-    font-weight: 600;
     font-style: normal;
 
 }
