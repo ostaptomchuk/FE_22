@@ -5,373 +5,143 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photography</title>
-    <link rel="stylesheet" href="./src/fonts/fonts.css">
-    <link rel="stylesheet" href="./src/styless/style.css">
+    <title>Create an Account</title>
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+
     <main class="main">
-
-        <section class="architectural-photography">
-
-            <div class="heading-holder">
-                <h2>Architectural Photography</h2>
+        <section class="create-account">
+            <div class="form-holder">
+                <form action="#" class="account">
+                    <h2 class="form-heading">
+                        Create an Account
+                    </h2>
+                    <div class="form-flex-container">
+                        <div class="name-holder">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="first-name">
+                        </div>
+                        <div class="lastname-holder">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" name="last-name">
+                        </div>
+                    </div>
+                    <div class="form-flex-container">
+                        <div class="email-holder">
+                            <label for="e-mail">E-mail</label>
+                            <input type="email" name="e-mail" id="e-mail">
+                            <span>We'll never share your email with anyone else.</span>
+                        </div>
+                    </div>
+                    <div class="form-flex-container">
+                        <div class="radio-holder">
+                            <input type="radio" id="item-1" name="sex" value="male">
+                            <label for="item-1">Male</label>
+                            <input type="radio" id="item-2" name="sex" value="female">
+                            <label for="item-2">Female</label>
+                        </div>
+                    </div>
+                    <div class="form-flex-container">
+                        <div class="select-holder">
+                            <label for="country-select">Country</label>
+                            <select name="country-select" id="country-select">
+                                <option value="0">Select</option>
+                                <option value="1">Ukraine</option>
+                                <option value="2">USA</option>
+                                <option value="3">England</option>
+                                <option value="4">Poland</option>
+                                <option value="5">Germany</option>
+                            </select>
+                        </div>
+                        <div class="city-holder">
+                            <label for="city">City</label>
+                            <input type="text" name="city" id="city">
+                        </div>
+                    </div>
+                    <div class="form-flex-container">
+                        <div class="button-holder">
+                            <button class="sign-up" type="submit">Sign Up</button>
+                            <span>By clicking the 'Sign Up' button, you confirm that you accept our <a href="#"
+                                    class="terms">Terms of Use</a>
+                                and <a href="#" class="terms">Privacy Policy</a>.</span>
+                        </div>
+                    </div>
+                    <div class="already-signedup">
+                        <span>Have an account?</span>
+                        <a href="#" class="log-in">Log In</a>
+                    </div>
+                </form>
             </div>
-
-            <div class="architectural-container">
-
-                <div class="arch-item-1">
-                    <div class="img-holder">
-                        <ul class="icons-list">
-                            <li>
-                                <a href="#"><img class="heart" src="./src/images/heart.svg"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img class="download" src="./src/images/download.svg"></i></a>
-                            </li>
-                        </ul>
-                        <img src="./src/images/arch-1.svg" alt="architect-1">
-                        <span class="photographer-name">Jezael Melgoza</span>
-                        <span class="photo-date">5 June 2020</span>
-                    </div>
-                </div>
-                <div class="arch-item-2">
-                    <div class="img-holder">
-                        <ul class="icons-list">
-                            <li>
-                                <a href="#"><img class="heart" src="./src/images/heart.svg"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img class="download" src="./src/images/download.svg"></i></a>
-                            </li>
-                        </ul>
-                        <img src="./src/images/arch-2.svg" alt="architect-2">
-                        <span class="photographer-name">Tom W</span>
-                        <span class="photo-date">30 March 2021</span>
-                    </div>
-                </div>
-                <div class="arch-item-3">
-                    <div class="img-holder">
-                        <ul class="icons-list">
-                            <li>
-                                <a href="#"><img class="heart" src="./src/images/heart.svg"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img class="download" src="./src/images/download.svg"></i></a>
-                            </li>
-                        </ul>
-                        <img src="./src/images/arch-3.svg" alt="architect-3">
-                        <span class="photographer-name">Johan Mouchet</span>
-                        <span class="photo-date">14 August 2019</span>
-                    </div>
-                </div>
-                <div class="arch-item-4">
-                    <div class="img-holder">
-                        <ul class="icons-list">
-                            <li>
-                                <a href="#"><img class="heart" src="./src/images/heart.svg"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img class="download" src="./src/images/download.svg"></i></a>
-                            </li>
-                        </ul>
-                        <img src="./src/images/arch-4.svg" alt="architect-4">
-                        <span class="photographer-name">Federico Di Dio</span>
-                        <span class="photo-date">29 October 2020 </span>
-                    </div>
-                </div>
-                <div class="arch-item-5">
-                    <div class="img-holder">
-                        <ul class="icons-list">
-                            <li>
-                                <a href="#"><img class="heart" src="./src/images/heart.svg"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img class="download" src="./src/images/download.svg"></i></a>
-                            </li>
-                        </ul>
-                        <img src="./src/images/arch-5.svg" alt="architect-5">
-                        <span class="photographer-name">Casey Horner</span>
-                        <span class="photo-date">9 July 2021</span>
-                    </div>
-                </div>
-                <div class="arch-item-6">
-                    <div class="img-holder">
-                        <ul class="icons-list">
-                            <li>
-                                <a href="#"><img class="heart" src="./src/images/heart.svg"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img class="download" src="./src/images/download.svg"></i></a>
-                            </li>
-                        </ul>
-                        <img src="./src/images/arch-6.svg" alt="architect-6">
-                        <span class="photographer-name">Alexander Rotker</span>
-                        <span class="photo-date">22 April 2022</span>
-                    </div>
-                </div>
-
-            </div>
-
         </section>
 
-        <section class="life-photography">
-
-            <div class="heading-holder">
-                <h2>Still Life Photography</h2>
+        <section class="profile">
+            <div class="form-holder">
+                <form action="#" class="profile">
+                    <h2 class="form-heading">
+                        Profile
+                    </h2>
+                    <div class="image-upload">
+                        <div class="avatar-holder">
+                            <img src="./src/images/profile-image.png" alt="profile avatar">
+                        </div>
+                        <div class="image-holder">
+                            <input class="file-check" type="file" max-size="1024" name="profile-img" id="profile-img">
+                            <span>Up to 1 MB (300x300 px)</span>
+                        </div>
+                        <div class="reset-holder">
+                            <input type="reset">
+                        </div>
+                    </div>
+                    <div class="form-flex-container">
+                        <div class="name-holder">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="first-name">
+                        </div>
+                        <div class="email-profile">
+                            <label for="e-mail">E-mail</label>
+                            <input type="email" name="e-mail" id="e-mail">
+                        </div>
+                    </div>
+                    <div class="form-flex-container">
+                        <div class="select-holder">
+                            <label for="country-select">Country</label>
+                            <select name="country-select" id="country-select">
+                                <option value="0">Select</option>
+                                <option value="1">Ukraine</option>
+                                <option value="2">USA</option>
+                                <option value="3">England</option>
+                                <option value="4">Poland</option>
+                                <option value="5">Germany</option>
+                            </select>
+                        </div>
+                        <div class="city-holder">
+                            <label for="city">City</label>
+                            <input type="text" name="city" id="city">
+                        </div>
+                    </div>
+                    <div class="form-flex-container">
+                        <div class="zip-holder">
+                            <label for="zip">Zip Code</label>
+                            <input type="number" name="zip" id="">
+                        </div>
+                        <div class="phone-holder">
+                            <label for="tel">Phone Number</label>
+                            <input type="tel" name="tel" id="tel">
+                        </div>
+                    </div>
+                    <div class="profile-button-holder">
+                        <button class="update" type="submit">Update</button>
+                    </div>
+                </form>
             </div>
-
-            <div class="life-container">
-
-                <div class="life-item-1">
-                    <div class="img-holder">
-                        <ul class="icons-list">
-                            <li>
-                                <a href="#"><img class="heart" src="./src/images/heart.svg"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img class="download" src="./src/images/download.svg"></i></a>
-                            </li>
-                        </ul>
-                        <img src="./src/images/life-1.svg" alt="life-photo-1">
-                        <span class="photographer-name">Robert Lukeman</span>
-                        <span class="photo-date">30 June 2020</span>
-                    </div>
-                </div>
-                <div class="life-item-2">
-                    <div class="img-holder">
-                        <ul class="icons-list">
-                            <li>
-                                <a href="#"><img class="heart" src="./src/images/heart.svg"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img class="download" src="./src/images/download.svg"></i></a>
-                            </li>
-                        </ul>
-                        <img src="./src/images/life-2.svg" alt="life-photo-2">
-                        <span class="photographer-name">Sean Oulashin</span>
-                        <span class="photo-date">5 September 2019</span>
-                    </div>
-                </div>
-                <div class="life-item-3">
-                    <div class="img-holder">
-                        <ul class="icons-list">
-                            <li>
-                                <a href="#"><img class="heart" src="./src/images/heart.svg"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img class="download" src="./src/images/download.svg"></i></a>
-                            </li>
-                        </ul>
-                        <img src="./src/images/life-3.svg" alt="life-photo-3">
-                        <span class="photographer-name">John Fowler</span>
-                        <span class="photo-date">10 August 2021</span>
-                    </div>
-                </div>
-                <div class="life-item-4">
-                    <div class="img-holder">
-                        <ul class="icons-list">
-                            <li>
-                                <a href="#"><img class="heart" src="./src/images/heart.svg"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img class="download" src="./src/images/download.svg"></i></a>
-                            </li>
-                        </ul>
-                        <img src="./src/images/life-4.svg" alt="life-photo-4">
-                        <span class="photographer-name">Dave Hoefler</span>
-                        <span class="photo-date">13 February 2021</span>
-                    </div>
-                </div>
-                <div class="life-item-5">
-                    <div class="img-holder">
-                        <ul class="icons-list">
-                            <li>
-                                <a href="#"><img class="heart" src="./src/images/heart.svg"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img class="download" src="./src/images/download.svg"></i></a>
-                            </li>
-                        </ul>
-                        <img src="./src/images/life-5.svg" alt="life-photo-5">
-                        <span class="photographer-name">Léonard Cotte</span>
-                        <span class="photo-date">5 September 2019</span>
-                    </div>
-                </div>
-                <div class="life-item-6">
-                    <div class="img-holder">
-                        <ul class="icons-list">
-                            <li>
-                                <a href="#"><img class="heart" src="./src/images/heart.svg"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img class="download" src="./src/images/download.svg"></i></a>
-                            </li>
-                        </ul>
-                        <img src="./src/images/life-6.svg" alt="life-photo-6">
-                        <span class="photographer-name">Rob Mulally</span>
-                        <span class="photo-date">30 May 2020</span>
-                    </div>
-                </div>
-
-            </div>
-
         </section>
-
-        <section class="fashion-photography">
-
-            <div class="heading-holder">
-                <h2>Portrait and Fashion Photography</h2>
-            </div>
-
-            <div class="fashion-container">
-
-                <div class="fashion-item-1">
-                    <div class="img-holder">
-                        <ul class="icons-list">
-                            <li>
-                                <a href="#"><img class="heart" src="./src/images/heart.svg"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img class="download" src="./src/images/download.svg"></i></a>
-                            </li>
-                        </ul>
-                        <img src="./src/images/fashion-1.svg" alt="fashion-photo-1">
-                        <span class="photographer-name">Pooja Chaudhary</span>
-                        <span class="photo-date">30 June 2020</span>
-                    </div>
-                </div>
-                <div class="fashion-item-2">
-                    <div class="img-holder">
-                        <ul class="icons-list">
-                            <li>
-                                <a href="#"><img class="heart" src="./src/images/heart.svg"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img class="download" src="./src/images/download.svg"></i></a>
-                            </li>
-                        </ul>
-                        <img src="./src/images/fashion-2.svg" alt="fashion-photo-2">
-                        <span class="photographer-name">Dom Hill</span>
-                        <span class="photo-date">13 October 2021</span>
-                    </div>
-                </div>
-                <div class="fashion-item-3">
-                    <div class="img-holder">
-                        <ul class="icons-list">
-                            <li>
-                                <a href="#"><img class="heart" src="./src/images/heart.svg"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img class="download" src="./src/images/download.svg"></i></a>
-                            </li>
-                        </ul>
-                        <img src="./src/images/fashion-3.svg" alt="fashion-photo-3">
-                        <span class="photographer-name">Seth Doyle</span>
-                        <span class="photo-date">30 May 2020</span>
-                    </div>
-                </div>
-                <div class="fashion-item-4">
-                    <div class="img-holder">
-                        <img src="./src/images/fashion-4.svg" alt="fashion-photo-4">
-                        <span class="photographer-name">devn</span>
-                        <span class="photo-date">30 June 2020</span>
-                    </div>
-                </div>
-                <div class="fashion-item-5">
-                    <div class="img-holder">
-                        <ul class="icons-list">
-                            <li>
-                                <a href="#"><img class="heart" src="./src/images/heart.svg"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img class="download" src="./src/images/download.svg"></i></a>
-                            </li>
-                        </ul>
-                        <img src="./src/images/fashion-5.svg" alt="fashion-photo-5">
-                        <span class="photographer-name">Noah Buscher</span>
-                        <span class="photo-date">13 February 2021</span>
-                    </div>
-                </div>
-                <div class="fashion-item-6">
-                    <div class="img-holder">
-                        <ul class="icons-list">
-                            <li>
-                                <a href="#"><img class="heart" src="./src/images/heart.svg"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img class="download" src="./src/images/download.svg"></i></a>
-                            </li>
-                        </ul>
-                        <img src="./src/images/fashion-6.svg" alt="fashion-photo-6">
-                        <span class="photographer-name">Sincerely Media</span>
-                        <span class="photo-date">7 January 2021</span>
-                    </div>
-                </div>
-                <div class="fashion-item-7">
-                    <div class="img-holder">
-                        <ul class="icons-list">
-                            <li>
-                                <a href="#"><img class="heart" src="./src/images/heart.svg"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img class="download" src="./src/images/download.svg"></i></a>
-                            </li>
-                        </ul>
-                        <img src="./src/images/fashion-7.svg" alt="fashion-photo-7">
-                        <span class="photographer-name">Seth Doyle</span>
-                        <span class="photo-date">30 June 2020</span>
-                    </div>
-                </div>
-                <div class="fashion-item-8">
-                    <div class="img-holder">
-                        <ul class="icons-list">
-                            <li>
-                                <a href="#"><img class="heart" src="./src/images/heart.svg"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img class="download" src="./src/images/download.svg"></i></a>
-                            </li>
-                        </ul>
-                        <img src="./src/images/fashion-8.svg" alt="fashion-photo-8">
-                        <span class="photographer-name">Melissa Askew</span>
-                        <span class="photo-date">29 April 2021</span>
-                    </div>
-                </div>
-                <div class="fashion-item-9">
-                    <div class="img-holder">
-                        <ul class="icons-list">
-                            <li>
-                                <a href="#"><img class="heart" src="./src/images/heart.svg"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img class="download" src="./src/images/download.svg"></i></a>
-                            </li>
-                        </ul>
-                        <img src="./src/images/fashion-9.svg" alt="fashion-photo-9">
-                        <span class="photographer-name">Brooke Cagle</span>
-                        <span class="photo-date">5 August 2019</span>
-                    </div>
-                </div>
-                <div class="fashion-item-10">
-                    <div class="img-holder"><ul class="icons-list">
-                        <li>
-                            <a href="#"><img class="heart" src="./src/images/heart.svg"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img class="download" src="./src/images/download.svg"></i></a>
-                        </li>
-                    </ul>
-                        <img src="./src/images/fashion-10.svg" alt="fashion-photo-10">
-                        <span class="photographer-name">Clem Onojeghuo</span>
-                        <span class="photo-date">1 July 2021</span>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
     </main>
 
 </body>
