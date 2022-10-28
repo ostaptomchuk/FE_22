@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create an Account</title>
-    <link rel="stylesheet" href="./src/styles/reset.css">
-    <link rel="stylesheet" href="./src/styles/style.css">
+    <title>Hello SASS (SCSS)</title>
+    <link rel="shortcut icon" href="https://e7.pngegg.com/pngimages/72/936/png-clipart-sass-cascading-style-sheets-preprocessor-less-postcss-meng-miscellaneous-text-thumbnail.png" type="image/x-icon">
+    <link rel="stylesheet" href="./src/styles/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;500&display=swap"
@@ -17,7 +17,7 @@
 <body>
 
     <main class="main">
-        <section class="create-account">
+        <div class="create-account">
             <div class="form-holder">
                 <form action="#" class="account">
                     <h2 class="form-heading">
@@ -79,26 +79,33 @@
                     </div>
                 </form>
             </div>
-        </section>
+        </div>
 
-        <section class="profile">
+        <div class="profile">
             <div class="form-holder">
                 <form action="#" class="profile">
                     <h2 class="form-heading">
                         Profile
                     </h2>
+
                     <div class="image-upload">
                         <div class="avatar-holder">
                             <img src="./src/images/profile-image.png" alt="profile avatar">
                         </div>
                         <div class="image-holder">
-                            <input class="file-check" type="file" max-size="1024" name="profile-img" id="profile-img">
+                            <label for="profile-img" class="profile-img-title">
+                                <input class="file-check" type="file" max-size="1024" name="profile-img" id="profile-img">
+                                <i class="icon"></i>
+                            </label>
                             <span>Up to 1 MB (300x300 px)</span>
                         </div>
                         <div class="reset-holder">
-                            <input type="reset">
+                            <button type="reset">
+                                <img src="./src/images/trash.png">
+                            </button>
                         </div>
                     </div>
+
                     <div class="form-flex-container">
                         <div class="name-holder">
                             <label for="first-name">First Name</label>
@@ -112,14 +119,17 @@
                     <div class="form-flex-container">
                         <div class="select-holder">
                             <label for="country-select">Country</label>
-                            <select name="country-select" id="country-select">
-                                <option value="0">Select</option>
-                                <option value="1">Ukraine</option>
-                                <option value="2">USA</option>
-                                <option value="3">England</option>
-                                <option value="4">Poland</option>
-                                <option value="5">Germany</option>
-                            </select>
+                            <div class="select-holder-custom">
+                                <select name="country-select" id="country-select">
+                                    <option value="0">Select</option>
+                                    <option value="1">Ukraine</option>
+                                    <option value="2">USA</option>
+                                    <option value="3">England</option>
+                                    <option value="4">Poland</option>
+                                    <option value="5">Germany</option>
+                                </select>
+                                <span class="custom-arrows"></span>
+                            </div>
                         </div>
                         <div class="city-holder">
                             <label for="city">City</label>
@@ -129,7 +139,7 @@
                     <div class="form-flex-container">
                         <div class="zip-holder">
                             <label for="zip">Zip Code</label>
-                            <input type="number" name="zip" id="">
+                            <input type="number" name="zip" id="zip">
                         </div>
                         <div class="phone-holder">
                             <label for="tel">Phone Number</label>
@@ -141,7 +151,7 @@
                     </div>
                 </form>
             </div>
-        </section>
+        </div>
     </main>
 
 </body>
