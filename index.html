@@ -5,154 +5,191 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello SASS (SCSS)</title>
-    <link rel="shortcut icon" href="https://e7.pngegg.com/pngimages/72/936/png-clipart-sass-cascading-style-sheets-preprocessor-less-postcss-meng-miscellaneous-text-thumbnail.png" type="image/x-icon">
-    <link rel="stylesheet" href="./src/styles/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;500&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="./src/fonts/fonts.css">
+    <link rel="stylesheet" href="./src/styles/css/main.css">
+    <title>Productly SCSS</title>
 </head>
 
 <body>
 
+    <header class="header">
+        <div class="header-holder">
+            <div class="logo-holder">
+                <a href="#"><img src="./src/images/logo.svg" alt=""></a>
+            </div>
+
+            <div class="header-menu">
+                <ul class="menu-items">
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Customers</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Resources</a></li>
+                </ul>
+            </div>
+
+            <div class="header-buttons-holder">
+                <ul class="buttons-items">
+                    <li><button class="sign-up"><a href="#">Sign In</a></button></li>
+                    <li><button class="regular-btn header-btn"><a href="#">Sign Up</a></button></li>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+
     <main class="main">
-        <div class="create-account">
-            <div class="form-holder">
-                <form action="#" class="account">
-                    <h2 class="form-heading">
-                        Create an Account
-                    </h2>
-                    <div class="form-flex-container">
-                        <div class="name-holder">
-                            <label for="first-name">First Name</label>
-                            <input type="text" id="first-name" name="first-name">
-                        </div>
-                        <div class="lastname-holder">
-                            <label for="last-name">Last Name</label>
-                            <input type="text" id="last-name" name="last-name">
-                        </div>
+        <section class="hero">
+            <div class="hero-holder">
+                <div class="hero-description">
+                    <div class="hero-heading">
+                        <h1>The Design Thinking superpowers</h1>
                     </div>
-                    <div class="form-flex-container">
-                        <div class="email-holder">
-                            <label for="e-mail">E-mail</label>
-                            <input type="email" name="e-mail" id="e-mail">
-                            <span>We'll never share your email with anyone else.</span>
-                        </div>
-                    </div>
-                    <div class="form-flex-container">
-                        <div class="radio-holder">
-                            <input type="radio" id="item-1" name="sex" value="male">
-                            <label for="item-1">Male</label>
-                            <input type="radio" id="item-2" name="sex" value="female">
-                            <label for="item-2">Female</label>
-                        </div>
-                    </div>
-                    <div class="form-flex-container">
-                        <div class="select-holder">
-                            <label for="country-select">Country</label>
-                            <select name="country-select" id="country-select">
-                                <option value="0">Select</option>
-                                <option value="1">Ukraine</option>
-                                <option value="2">USA</option>
-                                <option value="3">England</option>
-                                <option value="4">Poland</option>
-                                <option value="5">Germany</option>
-                            </select>
-                        </div>
-                        <div class="city-holder">
-                            <label for="city">City</label>
-                            <input type="text" name="city" id="city">
-                        </div>
-                    </div>
-                    <div class="form-flex-container">
-                        <div class="button-holder">
-                            <button class="sign-up" type="submit">Sign Up</button>
-                            <span>By clicking the 'Sign Up' button, you confirm that you accept our <a href="#"
-                                    class="terms">Terms of Use</a>
-                                and <a href="#" class="terms">Privacy Policy</a>.</span>
-                        </div>
-                    </div>
-                    <div class="already-signedup">
-                        <span>Have an account?</span>
-                        <a href="#" class="log-in">Log In</a>
-                    </div>
-                </form>
+                    <span>Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to
+                        imagine your next user experience.
+                    </span>
+                    <button class="regular-btn"><a href="#">Get started</a></button>
+                </div>
+
+                <div class="hero-image-holder">
+                    <img src="./src/images/hero-image.svg" alt="">
+                </div>
             </div>
-        </div>
+        </section>
 
-        <div class="profile">
-            <div class="form-holder">
-                <form action="#" class="profile">
-                    <h2 class="form-heading">
-                        Profile
-                    </h2>
-
-                    <div class="image-upload">
-                        <div class="avatar-holder">
-                            <img src="./src/images/profile-image.png" alt="profile avatar">
+        <section class="design-tools">
+            <img class="bg" src="./src/images/bg.svg" alt="">
+            <div class="design-tools-holder">
+                <div class="design-heading">
+                    <h2>We design tools to unveil your superpowers</h2>
+                </div>
+                <div class="design-items">
+                    <div class="design-item">
+                        <div class="item-img">
+                            <img src="./src/images/narrow-icon.png" alt="narrow">
                         </div>
-                        <div class="image-holder">
-                            <label for="profile-img" class="profile-img-title">
-                                <input class="file-check" type="file" max-size="1024" name="profile-img" id="profile-img">
-                                <i class="icon"></i>
-                            </label>
-                            <span>Up to 1 MB (300x300 px)</span>
-                        </div>
-                        <div class="reset-holder">
-                            <button type="reset">
-                                <img src="./src/images/trash.png">
-                            </button>
-                        </div>
+                        <h4>First click tests</h4>
+                        <span>While most people enjoy casino gambling,</span>
                     </div>
-
-                    <div class="form-flex-container">
-                        <div class="name-holder">
-                            <label for="first-name">First Name</label>
-                            <input type="text" id="first-name" name="first-name">
+                    <div class="design-item">
+                        <div class="item-img">
+                            <img src="./src/images/wave-icon.svg" alt="wave">
                         </div>
-                        <div class="email-profile">
-                            <label for="e-mail">E-mail</label>
-                            <input type="email" name="e-mail" id="e-mail">
-                        </div>
+                        <h4>Design surveys</h4>
+                        <span>Sports betting, lottery and bingo playing for the fun</span>
                     </div>
-                    <div class="form-flex-container">
-                        <div class="select-holder">
-                            <label for="country-select">Country</label>
-                            <div class="select-holder-custom">
-                                <select name="country-select" id="country-select">
-                                    <option value="0">Select</option>
-                                    <option value="1">Ukraine</option>
-                                    <option value="2">USA</option>
-                                    <option value="3">England</option>
-                                    <option value="4">Poland</option>
-                                    <option value="5">Germany</option>
-                                </select>
-                                <span class="custom-arrows"></span>
-                            </div>
+                    <div class="design-item">
+                        <div class="item-img">
+                            <img src="./src/images/heart-icon.svg" alt="heart">
                         </div>
-                        <div class="city-holder">
-                            <label for="city">City</label>
-                            <input type="text" name="city" id="city">
-                        </div>
+                        <h4>Preference tests</h4>
+                        <span>The Myspace page defines the individual.</span>
                     </div>
-                    <div class="form-flex-container">
-                        <div class="zip-holder">
-                            <label for="zip">Zip Code</label>
-                            <input type="number" name="zip" id="zip">
+                    <div class="design-item">
+                        <div class="item-img">
+                            <img src="./src/images/san-watch-icon.svg" alt="sand">
                         </div>
-                        <div class="phone-holder">
-                            <label for="tel">Phone Number</label>
-                            <input type="tel" name="tel" id="tel">
-                        </div>
+                        <h4>Five second tests</h4>
+                        <span>Personal choices and the overall personality of the person.</span>
                     </div>
-                    <div class="profile-button-holder">
-                        <button class="update" type="submit">Update</button>
-                    </div>
-                </form>
+                </div>
+                <button class="regular-btn"><a href="#">Sign up Now</a></button>
             </div>
-        </div>
+        </section>
+
+        <section class="roles">
+            <div class="benefits-wrapper">
+                <div class="benefits-text-holder">
+                    <span>Effortless Validation for</span>
+                    <h2>Design Professionals</h2>
+                    <p>The Myspace page defines the individual, his or her characteristics, traits, personal choices and
+                        the overall personality of the person. </p>
+                    <strong>Accessory makers</strong>
+                    <p>While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun
+                    </p>
+                    <strong>Alterationists</strong>
+                    <p>If you are looking for a new way to promote your business that won’t cost you more money, </p>
+                    <strong>Custom Design designers</strong>
+                    <p>If you are looking for a new way to promote your business that won’t cost you more money, </p>
+                </div>
+                <div class="benefits-image-holder">
+                    <img src="./src/images/design-image.svg" alt="designer">
+                </div>
+            </div>
+
+            <div class="benefits-wrapper benefits-wrapper-reverse">
+                <div class="benefits-text-holder">
+                    <span>Easier decision making for</span>
+                    <h2>Product Managers</h2>
+                    <p>The Myspace page defines the individual, his or her characteristics, traits, personal choices and
+                        the overall personality of the person. </p>
+                    <ul class="benefits-ulka">
+                        <li>Never worry about overpaying for your energy bill again. </li>
+                        <li>We will only switch you to energy companies that we trust and will treat you right.</li>
+                        <li>We track the markets daily and know where the savings are.</li>
+                    </ul>
+                </div>
+                <div class="benefits-image-holder">
+                    <img src="./src/images/manager-image.svg" alt="pm">
+                </div>
+            </div>
+
+            <div class="benefits-wrapper">
+                <div class="benefits-text-holder">
+                    <span>Optimisation for</span>
+                    <h2>Marketers</h2>
+                    <p>Few would argue that, despite the advancements of feminism over the past three decades, women
+                        still face a double standard when it comes to their behavior. </p>
+                    <strong>Accessory makers</strong>
+                    <p>While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun
+                    </p>
+                    <strong>Alterationists</strong>
+                    <p>If you are looking for a new way to promote your business that won’t cost you more money, </p>
+                    <strong>Custom Design designers</strong>
+                    <p>If you are looking for a new way to promote your business that won’t cost you more money, </p>
+                </div>
+                <div class="benefits-image-holder">
+                    <img src="./src/images/marketers-image.svg" alt="marketers">
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="footer">
+        <div class="footer-holder">
+            <div class="footer-logo">
+                <a href="#"><img src="./src/images/logo.svg" alt="logo"></a>
+
+            </div>
+            <div class="footer-nav">
+                <span>Quick Links</span>
+                <ul class="footer-nav-items">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav">
+                <span>Legal Stuff</span>
+                <ul class="footer-nav-items">
+                    <li><a href="#">Disclaimer</a></li>
+                    <li><a href="#">Financing</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-form-holder">
+                <form action="#">
+                    <span>Knowing you're always on the best energy deal.
+                    </span>
+                    <div class="tel-holder">
+                        <input placeholder="Enter your phone Number" type="tel" name="phone" id="phone">
+                    </div>
+                    <button class="regular-btn"><a href="#">Sign up Now</a></button>
+                </form>
+            </div>
+        </div>
+    </footer>
 
 </body>
 

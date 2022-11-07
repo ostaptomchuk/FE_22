@@ -1,0 +1,39 @@
+.header {
+    max-height: 80px;
+    height: 100%;
+    margin-bottom: 70px;
+}
+
+.header-holder {
+    max-width: 1200px;
+    width: 100%;
+    margin: 17px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header-menu {
+        max-width: 352px;
+        width: 100%;
+
+        .menu-items {
+            display: flex;
+            justify-content: space-around;
+
+            a:hover,
+            a:active {
+                color: #FF9900;
+            }
+        }
+    }
+
+    .header-buttons-holder {
+        max-width: 252px;
+        width: 100%;
+
+        .buttons-items {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}
