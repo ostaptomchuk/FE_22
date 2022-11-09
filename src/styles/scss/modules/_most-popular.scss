@@ -1,0 +1,127 @@
+.most-popular {
+    margin-bottom: 90px;
+}
+
+.most-popular-holder {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+
+    @include media (">=768px") {
+        padding: 0;
+    }
+
+    .content-heading {
+
+        @include media (">=768px") {
+            margin-bottom: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        & a::after {
+            content: url(/src/images/arrow-small.svg);
+            margin-left: 5px;
+        }
+    }
+
+    .popular-items {
+
+        margin-bottom: 50px;
+
+        @include media (">=768px") {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .popular-item {
+
+            @include media (">=768px") {
+                max-width: 570px;
+                width: 100%;
+            }
+
+            .popular-img-holder {
+                max-width: 300px;
+                width: 100%;
+                margin-bottom: 25px;
+
+                @include media (">=768px") {
+                    max-width: 570px;
+                }
+            }
+
+            .post-description {
+
+                .date-n-tag {
+
+                    span {
+                        display: block;
+                        margin-bottom: 26px;
+                    }
+                }
+
+                h4 {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    .next-page-holder {
+
+        @include media (">=768px") {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .next-page {
+            max-width: 470px;
+            width: 100%;
+
+            a {
+                font-family: 'Red Hat Display';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 23px;
+                line-height: 166%;
+                /* or 38px */
+
+                letter-spacing: 0.1em;
+
+                /* Base / Black */
+
+                color: #000000;
+
+                &::after {
+                    content: url(/src/images/arrow-small.svg);
+                    margin-left: 5px;
+                }
+            }
+        }
+
+        .page-notation {
+            max-width: 470px;
+            width: 100%;
+
+            p {
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 19px;
+                line-height: 32px;
+                /* or 168% */
+
+                letter-spacing: 0.05em;
+
+                /* Grey 700 */
+
+                color: #565656;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,25 @@
+.btn-holder {
+margin-bottom: 90px;
+text-align: center;
+    .show-more-items {
+        width: 180px;
+        height: 46px;
+        background: #565656;
+        border: none;
+
+        a {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 166%;
+            /* identical to box height, or 27px */
+
+            letter-spacing: 0.1em;
+
+            /* Base / White */
+
+            color: #FFFFFF;
+        }
+    }
+}

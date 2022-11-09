@@ -1,40 +1,55 @@
 .hero {
-    margin-bottom: 100px;
+    margin-bottom: 90px;
 }
 
 .hero-holder {
-    max-width: 1200px;
+    max-width: 1440px;
     width: 100%;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.hero-description {
-    max-width: 500px;
-    width: 100%;
-    margin-bottom: 30px;
-    display: block;
+    .hero-wallpaper {
+        position: relative;
 
-    .regular-btn {
-        margin-top: 20px;
+        img {
+            min-width: 320px;
+            min-height: 500px;
+            object-fit: cover;
+        }
     }
 
     .hero-heading {
-        h1 {
-            margin-bottom: 30px;
-            font-weight: 700;
-            font-size: 44px;
-            line-height: 54px;
-            color: #2F281E;
+        max-width: 300px;
+        width: 100%;
+        position: absolute;
+        top: calc(8%);
+        left: calc(5%);
+
+        @include media (">=768px") {
+            max-width: 700px;
+            width: 100%;
+            top: 10%;
+            left: 8%;
         }
 
-        span {
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 28px;
-            color: #544837;
+        @include media (">=1024px") {
+            max-width: 770px;
+            width: 100%;
+            top: 12%;
+            left: 18%;
+        }
+
+        h1 {
+            @include media (">=768px") {
+                font-weight: 600;
+                font-size: 36px;
+                line-height: 50px;
+            }
+
+            @include media (">=1024px") {
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 64px;
+            }
         }
     }
 }
