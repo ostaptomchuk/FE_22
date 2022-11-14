@@ -1,18 +1,12 @@
 .latest-posts {
-    margin-bottom: 86px;
+    margin-bottom: 20px;
 }
 
-.posts-holder {
-    max-width: 1170px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 10px;
-
-    @include media (">=768px") {
-        padding: 0;
-    }
+.container {
 
     .content-heading {
+
+        margin-bottom: 30px;
 
         @include media (">=768px") {
             padding: 10px;
@@ -22,53 +16,93 @@
             align-items: center;
         }
 
-        & a::after {
+        a::after {
             content: url(/src/images/arrow-small.svg);
             margin-left: 5px;
         }
     }
+}
 
-    .posts-items {
+.row {
 
-        .post-item-flex-container {
+    @include media (">=1024px") {
+        display: flex;
+        justify-content: space-between;
+    }
 
-            @include media (">=768px") {
-                display: flex;
-                justify-content: space-between;
+    .post-item {
+
+        @include media('>=768px') {
+            width: 100%;
+            margin-bottom: 70px;
+        }
+
+        @include media('>=1024px') {
+            width: calc(100% / 3);
+            padding: 0 15px;
+        }
+
+        &:nth-child(even) {
+            .post-link {
+                flex-direction: row-reverse;
+
+                @include media('>=1024px') {
+                    flex-direction: column;
+                }
             }
         }
 
-        @include media (">=1024px") {
-            display: flex;
-            justify-content: space-between;
+        .post-link {
+            @include media('>=768px') {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            @include media('>=1024px') {
+                flex-direction: column;
+                gap: 0;
+            }
         }
 
-        .post-item {
-            
-            @include media (">=768px") {
-                max-width: 370px;
+
+        .posts-img-holder {
+
+            margin-bottom: 20px;
+
+            @include media (">=1024px") {
+                margin-bottom: 70px;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .post-description {
+
+            @include media('>=768px') {
+                width: calc(40% - 10px);
+            }
+
+            @include media('>=1024px') {
                 width: 100%;
             }
 
+            .date-n-tag {
 
+                display: flex;
+                justify-content: space-between;
 
-            .posts-img-holder {
-                margin-bottom: 25px;
+                strong {
+                    display: block;
+                    margin-bottom: 26px;
+                }
+
             }
 
-            .post-description {
-
-                .date-n-tag {
-
-                    span {
-                        display: block;
-                        margin-bottom: 26px;
-                    }
-                }
-
-                h4 {
-                    margin-bottom: 20px;
-                }
+            h3 {
+                margin-bottom: 20px;
             }
         }
     }

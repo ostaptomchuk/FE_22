@@ -27,15 +27,15 @@
         @include media (">=768px") {
             max-width: 700px;
             width: 100%;
-            top: 10%;
+            top: 20%;
             left: 8%;
         }
 
         @include media (">=1024px") {
             max-width: 770px;
             width: 100%;
-            top: 12%;
-            left: 18%;
+            top: 20%;
+            left: 10%;
         }
 
         h1 {
