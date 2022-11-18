@@ -1,10 +1,7 @@
-@import "./base/mixins";
-@import "./base/reset";
-@import "./base/general";
-@import "./modules/header";
-@import "./modules/hero";
-@import "./modules/blog";
-@import "./modules/latest-posts";
-@import "./modules/most-popular";
-@import "./modules/footer";
-@import "./modules/button";
+@import "./_base/reset";
+@import "./_base/mixins";
+@import "./_base/general";
+@import "./_modules/footer";
+@import "./_modules/header";
+@import "./_modules/hero";
+@import "./_modules/social-icons";

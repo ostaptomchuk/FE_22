@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'socials';
+  src:  url('/src/fonts/socials-icons/fonts/socials.eot?fyfv8n');
+  src:  url('/src/fonts/socials-icons/fonts/socials.eot?fyfv8n#iefix') format('embedded-opentype'),
+    url('/src/fonts/socials-icons/fonts/socials.ttf?fyfv8n') format('truetype'),
+    url('/src/fonts/socials-icons/fonts/socials.woff?fyfv8n') format('woff'),
+    url('/src/fonts/socials-icons/fonts/socials.svg?fyfv8n#socials') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'socials' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-facebook2:before {
+  content: "\ea91";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-whatsapp:before {
+  content: "\ea93";
+}
+.icon-spotify:before {
+  content: "\ea94";
+}
+.icon-telegram:before {
+  content: "\ea95";
+}
+.icon-dribbble:before {
+  content: "\eaa7";
+}
+.icon-behance:before {
+  content: "\eaa8";
+}
+.icon-behance2:before {
+  content: "\eaa9";
+}
+.icon-github:before {
+  content: "\eab0";
+}
