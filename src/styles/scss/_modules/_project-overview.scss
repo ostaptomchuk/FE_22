@@ -1,0 +1,27 @@
+.project-overview {
+    margin-bottom: 70px;
+
+    @include media (">=768px") {
+        margin-bottom: 90px;
+    }
+}
+
+.title {
+    margin-bottom: 40px;
+
+    @include media (">=768px") {
+        margin-bottom: 50px;
+    }
+
+    @include media (">=1024px") {
+        margin-bottom: 70px;
+    }
+}
+
+.project-text-holder {
+
+
+    @include media (">=1024px") {
+        width: 570px;
+    }
+}

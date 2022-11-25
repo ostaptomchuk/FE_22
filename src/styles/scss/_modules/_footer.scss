@@ -1,32 +1,66 @@
 .footer {
-    background-color: #16133D;
-    min-height: 200px;
-    height: 100%;
+    background: #F4F4F4;
+    padding: 50px 10px;
+
+
+    @include media (">=768px") {
+        padding: 50px 198px;
+    }
+
+    @include media (">=1024px") {
+        padding: 70px 135px 30px;
+    }
 }
 
 .footer-holder {
-    max-width: 1170px;
+    max-width: 950px;
     width: 100%;
     margin: 0 auto;
-    padding: 40px 20px;
+}
 
-    .logo-holder {
-        margin-bottom: 30px;
+.footer-heading-holder {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    color: #000000;
+    margin-bottom: 40px;
+    text-align: center;
+    max-width: 390px;
+    width: 100%;
+
+    @include media (">=768px") {
+        margin-bottom: 52px;
     }
 
-    .socials {
-        max-width: 230px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
+    @include media (">=1024px") {
+       text-align: left;
+    }
 
-        li {
-            padding: 7px;
-            background: #EFEEF3;
-            border-radius: 5px;
-            width: 38px;
-            height: 38px;
-            font-size: 24px;
+    .need-project {
+        display: block;
+        font-family: 'Red Hat Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 42px;
+        letter-spacing: 0.05em;
+        color: #000000;
+        margin-bottom: 20px;
+
+        @include media (">=768px") {
+            font-size: 48px;
         }
+    }
+
+    .tel {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .email {
+        display: block;
     }
 }

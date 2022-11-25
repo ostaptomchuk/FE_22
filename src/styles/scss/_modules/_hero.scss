@@ -1,102 +1,22 @@
 .hero {
-    padding: 50px 20px;
+    margin-bottom: 70px;
+
+    @include media (">=768px") {
+        margin-bottom: 90px;
+    }
 }
 
 .hero-holder {
-    max-width: 1170px;
-    width: 100%;
-    margin: 0 auto;
 
-    .hero-heading-holder {
-
+    .heading-holder {
         margin-bottom: 40px;
 
-        .pseudo-title {
-            margin-bottom: 15px;
-        }
-    }
-
-    .cards-holder {
-
         @include media (">=768px") {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-
+            margin-bottom: 50px;
         }
 
-        .card {
-            max-width: 290px;
-            width: 100%;
-            min-height: 260px;
-            padding: 20px;
-            margin-bottom: 30px;
-            border: 1px solid #E5EAF4;
-            border-radius: 8px;
-
-            @include media (">=1024px") {
-                max-width: 370px;
-                width: 100%;
-                height: 340px;
-            }
-
-
-            .card-img {
-                width: 72px;
-                height: 72px;
-                border: 1px solid rgba(21, 101, 216, 0.1);
-                border-radius: 16px;
-                margin-bottom: 20px;
-
-
-                .icon {
-                    background-image: url("/src/img/svg/Icons.svg");
-                    display: inline-block;
-                    width: 64px;
-                    height: 65px;
-                    background-position: -6px -5px;
-                    transition: all ease-in-out 0.3s;
-
-                    &:hover {
-                        background-position: -6px -64px;
-                    }
-
-
-                    &.icon-store {
-                        background-position: 149px -5px;
-
-                        &:hover {
-                            background-position: 149px -64px;
-                        }
-                    }
-
-                    &.icon-store-3 {
-                        background-position: 308px -5px;
-
-                        &:hover {
-                            background-position: 308px -64px;
-                        }
-                    }
-                }
-
-            }
-
-            .card-description {
-                // max-width: 250px;
-                // width: 100%;
-                margin-bottom: 30px;
-
-                .card-pseudo-title {
-                    display: block;
-                    margin-bottom: 20px;
-                }
-
-                .paragraph-holder {
-                    margin-bottom: 30px;
-                }
-            }
+        @include media (">=1024px") {
+            margin-bottom: 70px;
         }
     }
-
-
 }

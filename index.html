@@ -5,73 +5,136 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/fonts/fonts.css">
-    <link rel="stylesheet" href="./src/fonts/socials-icons/icons-font.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Red+Hat+Display:wght@400;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./src/styles/css/main.css">
-    <title>Freehand</title>
+    <title>Adaptive</title>
 </head>
 
 <body>
     <header class="header">
-        <div class="header-holder">
-            <div class="logo-holder">
-                <a href="#"><img src="./src/img/svg/Logo.svg" alt="main logo"></a>
+        <div class="container">
+            <div class="header-holder">
+                <div class="logo-holder">
+                    <a href="#"><img src="./src/img/header-logo.svg" alt="logo"></a>
+                </div>
             </div>
         </div>
     </header>
 
     <main class="main">
         <section class="hero">
-            <div class="hero-holder">
-                <div class="hero-heading-holder">
-                    <strong class="pseudo-title">OUR SERVICES</strong>
-                    <h1 class="main-heading">We build experience</h1>
+            <div class="container">
+                <div class="hero-holder">
+                    <div class="heading-holder">
+                        <h1>
+                            AI Fashion Platform
+                        </h1>
+                    </div>
+                    <div class="image-holder">
+                        <picture>
+                            <source srcset="./src/img/image-1-1x.jpg, ./src/img/image-1-2x" media="(min-width: 768px)">
+                            <img src="./src/img/image-mobile-1.jpg" alt="hero image">
+                        </picture>
+                    </div>
                 </div>
-                <div class="cards-holder">
-                    <div class="card">
-                        <div class="card-img">
-                            <div class="sprite-holder">
-                                <span class="icon"> </span>
-                            </div>
-                        </div>
-                        <div class="card-description">
-                            <strong class="card-pseudo-title">Design</strong>
-                            <div class="paragraph-holder">
-                                <p>Lorem ipsum dolor sit amet, coectetur adipiscing elit. Suspendisse varius enim in
-                                    eros .</p>
-                            </div>
-                            <a href="#" class="link">Learn more</a>
-                        </div>
+            </div>
+        </section>
+        <section class="project-overview">
+            <div class="container">
+                <div class="project-holder">
+                    <h2 class="title">
+                        Project Overview
+                    </h2>
+                    <div class="project-text-holder">
+                        <p>
+                            FashHanger is a bespoke sustainable high-fashion accessory company based out of Berlin,
+                            currently operated by Siesly and her sister Ashely. They needed help for a big rebrand and
+                            wanted to relaunch their website.
+                        </p>
+
+                        <p> Their goals were simple, create a unique e-commerce store that bring a wonderful shopping
+                            experience at every stage of the buyer’s journey.</p>
                     </div>
-                    <div class="card">
-                        <div class="card-img">
-                            <div class="sprite-holder">
-                                <span class="icon icon-store"> </span>
-                            </div>
-                        </div>
-                        <div class="card-description">
-                            <strong class="card-pseudo-title">Ecommerce</strong>
-                            <div class="paragraph-holder">
-                                <p>Lorem ipsum dolor sit amet, coectetur adipiscing elit. Suspendisse varius enim in
-                                    eros .</p>
-                            </div>
-                            <a href="#" class="link">Learn more</a>
-                        </div>
+                </div>
+            </div>
+        </section>
+        <section class="research">
+            <div class="container">
+                <div class="research-holder">
+                    <h2 class="title">
+                        User Research and Personas
+                    </h2>
+                    <div class="image-holder">
+                        <picture>
+                            <source srcset="./src/img/image-2-1x.jpg, ./src/img/image-2-2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <img src="./src/img/image-mobile-2.jpg" alt="reserch image">
+                        </picture>
                     </div>
-                    <div class="card">
-                        <div class="card-img">
-                            <div class="sprite-holder">
-                                <span class="icon icon-store icon-store-3"> </span>
-                            </div>
-                        </div>
-                        <div class="card-description">
-                            <strong class="card-pseudo-title">Application</strong>
-                            <div class="paragraph-holder">
-                                <p>Lorem ipsum dolor sit amet, coectetur adipiscing elit. Suspendisse varius enim in
-                                    eros .</p>
-                            </div>
-                            <a href="#" class="link">Learn more</a>
-                        </div>
+                    <div class="text-holder">
+                        <p>
+                            Who is your user? Indicate her KEY personality traits and help round out her overall
+                            image.Originally,
+                        </p>
+
+                        <p> the personality section of this persona was based off the Myers Briggs personality test.
+                            According to the Myers Briggs, there are 16 potential user personality types. Our template
+                            integrates questions from this online personality test example into a series of sliding bar
+                            graphics. If you’re confused as to what the sliders mean, check out the Myers Briggs basics
+                            article.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sketches">
+            <div class="container">
+                <div class="sketches-holder">
+                    <h2 class="title">
+                        Initial Sketches
+                    </h2>
+                    <div class="image-holder">
+                        <picture>
+                            <source srcset="./src/img/image-3-1x.jpg, ./src/img/image-3-2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <img src="./src/img/image-mobile-3.jpg" alt="sketches image">
+                        </picture>
+                    </div>
+                    <div class="text-holder">
+                        <p>
+                            In the beginning, It’s just about brainstorming.
+                        </p>
+
+                        <p> I list out a jumble of words and draw tiny sketches related to what I’m working on (and find
+                            the parallels later). Personally, I prefer paper with a grid so I can convey things
+                            responsively. Most of the time perfection isn’t an issue and the sketches are just for me.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="final-result">
+            <div class="container">
+                <div class="result-holder">
+                    <h2 class="title">
+                        Final Design
+                    </h2>
+                    <div class="image-holder">
+                        <picture>
+                            <source srcset="./src/img/image-4-1x.jpg, ./src/img/image-4-2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <img src="./src/img/image-mobile-4.jpg" alt="sketches image">
+                        </picture>
+                    </div>
+                    <div class="text-holder">
+                        <p>
+                            I played with adding a wireframe of the website flow that would lead you in to each screen.
+                            For each of those screens I added a floating footer that allows users to see where they are
+                            in that particular flow and jump around as needed.” We’re digging this InVision-made
+                            wireframe.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -79,20 +142,31 @@
     </main>
 
     <footer class="footer">
-        <div class="footer-holder">
-            <div class="logo-holder">
-                <a href="#"><img src="./src/img/svg/Logo-footer.svg" alt="footer logo"></a>
-            </div>
-            <ul class="socials">
-                <li><a href="#"><i class="icon-instagram"></i></a></li>
-                <li><a href="#"><i class="icon-facebook"></i></a></li>
-                <li><a href="#"><i class="icon-github"></i></a></li>
-                <li><a href="#"><i class="icon-dribbble"></i></a></li>
-                <li><a href="#"><i class="icon-telegram"></i></a></li>
-            </ul>
-        </div>
-    </footer>
 
+        <div class="footer-holder">
+            <div class="footer-heading-holder">
+                <span class="need-project">Need a project?</span>
+                <span class="tel">(239) 555-0108</span>
+                <span class="email">tanya.hill@example.com</span>
+            </div>
+            <div class="socials">
+                <div class="social-item">
+                    <i class="ig"></i>
+                </div>
+                <div class="social-item">
+                    <i class="fb"></i>
+                </div>
+                <div class="social-item">
+                    <i class="twitter"></i>
+                </div>
+                <div class="social-item">
+                    <i class="linkedin"></i>
+                </div>
+            </div>
+            <span class="rights-reserved">© Copyright Manifest Theme. Allrights reserved</span>
+        </div>
+
+    </footer>
 </body>
 
 </html>
