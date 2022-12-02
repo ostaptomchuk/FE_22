@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/201/201623.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Red+Hat+Display:wght@400;600&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./src/styles/css/main.css">
-    <title>Adaptive</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/fonts/Exam-Icons-v1.0/style.css">
+    <link rel="stylesheet" href="./src/fonts/fonts.css">
+    <link rel="stylesheet" href="./src/style/css/main.css">
+    <title>Travel With Us</title>
 </head>
 
 <body>
@@ -18,123 +20,176 @@
         <div class="container">
             <div class="header-holder">
                 <div class="logo-holder">
-                    <a href="#"><img src="./src/img/header-logo.svg" alt="logo"></a>
+                    <a href="#"><img src="./src/img/logo.svg" alt="header-logo"></a>
+                </div>
+                <div class="header-menu">
+                    <input class="side-menu" type="checkbox" id="side-menu" />
+                    <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+                    <nav class="nav">
+                        <ul class="menu">
+                            <li class="nav-item"><a href="#" class="nav-link">Who We Are</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">What We Do</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Travel With Us</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
     </header>
 
     <main class="main">
-        <section class="hero">
-            <div class="container">
-                <div class="hero-holder">
-                    <div class="heading-holder">
-                        <h1>
-                            AI Fashion Platform
-                        </h1>
-                    </div>
-                    <div class="image-holder">
-                        <picture>
-                            <source srcset="./src/img/image-1-1x.jpg, ./src/img/image-1-2x" media="(min-width: 768px)">
-                            <img src="./src/img/image-mobile-1.jpg" alt="hero image">
-                        </picture>
+        <section id="hero">
+            <div class="hero-bg">
+                <div class="container">
+                    <div class="hero-holder">
+                        <div class="hero-heading-holder">
+                            <h1 class="title">Bhromaon</h1>
+                            <strong class="pseudo-title">Safe Travel Anywhere</strong>
+                        </div>
+                        <div class="form-holder">
+                            <form class="searchbox" action="#">
+                                <div class="input-holder">
+                                    <input class="search" type="search" name="search" id="search"
+                                        placeholder="Search Your Travel Destination" minlength="3" required>
+                                    <button type="submit" class="search-btn">Search</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="slider-holder">
+                            <a href="#choose-us" class="slider">Scroll Down</a>
+                            <i class="icon-chevron-down"></i>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="project-overview">
-            <div class="container">
-                <div class="project-holder">
-                    <h2 class="title">
-                        Project Overview
-                    </h2>
-                    <div class="project-text-holder">
-                        <p>
-                            FashHanger is a bespoke sustainable high-fashion accessory company based out of Berlin,
-                            currently operated by Siesly and her sister Ashely. They needed help for a big rebrand and
-                            wanted to relaunch their website.
-                        </p>
 
-                        <p> Their goals were simple, create a unique e-commerce store that bring a wonderful shopping
-                            experience at every stage of the buyer’s journey.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="research">
-            <div class="container">
-                <div class="research-holder">
-                    <h2 class="title">
-                        User Research and Personas
-                    </h2>
-                    <div class="image-holder">
-                        <picture>
-                            <source srcset="./src/img/image-2-1x.jpg, ./src/img/image-2-2x.jpg 2x"
-                                media="(min-width: 768px)">
-                            <img src="./src/img/image-mobile-2.jpg" alt="reserch image">
-                        </picture>
-                    </div>
-                    <div class="text-holder">
-                        <p>
-                            Who is your user? Indicate her KEY personality traits and help round out her overall
-                            image.Originally,
-                        </p>
+        <section id="choose-us">
+            <div class="choose-us-bg">
+                <div class="container">
+                    <div class="choose-us-holder">
+                        <div class="choose-us-images">
+                            <div class="choose-img choose-img-1">
+                                <img src="./src/img/choose-us-house.jpg" alt="house">
+                            </div>
+                            <div class="choose-img choose-img-2">
+                                <img src="./src/img/choose-us-mountains.jpg" alt="mountains">
+                            </div>
 
-                        <p> the personality section of this persona was based off the Myers Briggs personality test.
-                            According to the Myers Briggs, there are 16 potential user personality types. Our template
-                            integrates questions from this online personality test example into a series of sliding bar
-                            graphics. If you’re confused as to what the sliders mean, check out the Myers Briggs basics
-                            article.</p>
+                        </div>
+                        <div class="choose-us-content">
+                            <h2 class="second-title">Why Choose Us</h2>
+                            <div class="text-holder">
+                                <p class="paragraph choose-p">
+                                    Tion and dislike men who are so beguiled and demoralized by desire by the charms of
+                                    pleasure of the moment, so blinded by desire, that they cannot foresee
+                                </p>
+                                <p class="paragraph choose-p">
+                                    Ddislike men who are so beguiled and demoralized by the charms of pleasure of the
+                                    moment, so blinded by desire, that.
+                                </p>
+                            </div>
+                            <div class="button-holder">
+                                <button class="main-btn"><a href="#"><span class="btn-text">Explore Places
+                                        </span></a></button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="sketches">
-            <div class="container">
-                <div class="sketches-holder">
-                    <h2 class="title">
-                        Initial Sketches
-                    </h2>
-                    <div class="image-holder">
-                        <picture>
-                            <source srcset="./src/img/image-3-1x.jpg, ./src/img/image-3-2x.jpg 2x"
-                                media="(min-width: 768px)">
-                            <img src="./src/img/image-mobile-3.jpg" alt="sketches image">
-                        </picture>
-                    </div>
-                    <div class="text-holder">
-                        <p>
-                            In the beginning, It’s just about brainstorming.
-                        </p>
 
-                        <p> I list out a jumble of words and draw tiny sketches related to what I’m working on (and find
-                            the parallels later). Personally, I prefer paper with a grid so I can convey things
-                            responsively. Most of the time perfection isn’t an issue and the sketches are just for me.
-                        </p>
+        <section id="steps">
+            <div class="steps-bg">
+                <div class="container">
+                    <div class="steps-holder">
+                        <div class="img-holder">
+                            <img src="./src/img/dashed-line.svg" alt="line through icons">
+                        </div>
+                        <div class="icons-holder">
+                            <div class="icon-holder">
+                                <i class="icon-search"></i>
+                                <span class="icons-text">Search Places</span>
+                            </div>
+                            <div class="icon-holder">
+                                <i class="icon-check-circle"></i>
+                                <span class="icons-text">Select Places</span>
+                            </div>
+                            <div class="icon-holder">
+                                <i class="icon-thumbs-up"></i>
+                                <span class="icons-text">Book & Enjoy</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="final-result">
-            <div class="container">
-                <div class="result-holder">
-                    <h2 class="title">
-                        Final Design
-                    </h2>
-                    <div class="image-holder">
-                        <picture>
-                            <source srcset="./src/img/image-4-1x.jpg, ./src/img/image-4-2x.jpg 2x"
-                                media="(min-width: 768px)">
-                            <img src="./src/img/image-mobile-4.jpg" alt="sketches image">
-                        </picture>
+
+        <section id="grand-spain">
+            <div class="spain-bg">
+                <div class="container">
+                    <div class="grand-spain-holder">
+                        <div class="description">
+                            <strong class="hispania">Spain</strong>
+                            <h3 class="s-title">Grand Spain Madrid</h3>
+                            <div class="text-holder">
+                                <p class="paragraph">But I must explain to you how all this mistaken idea of account to
+                                    denouncing pleasure
+                                    and praising pain was account born and I account will give you a complete account of
+                                    the
+                                    system</p>
+                            </div>
+                            <div class="button-holder">
+                                <button class="main-btn"><a href="#"><span class="btn-text">book now
+                                        </span></a></button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="text-holder">
-                        <p>
-                            I played with adding a wireframe of the website flow that would lead you in to each screen.
-                            For each of those screens I added a floating footer that allows users to see where they are
-                            in that particular flow and jump around as needed.” We’re digging this InVision-made
-                            wireframe.
-                        </p>
+                </div>
+            </div>
+            <div class="spain-bg-2">
+                <div class="container">
+                    <div class="grand-spain-holder grand-spain-holder-reverse">
+                        <div class="description">
+                            <strong class="hispania">Spain</strong>
+                            <h3 class="s-title">Grand Spain Madrid</h3>
+                            <div class="text-holder">
+                                <p class="paragraph">But I must explain to you how all this mistaken idea of account to
+                                    denouncing pleasure
+                                    and praising pain was account born and I account will give you a complete account of
+                                    the
+                                    system</p>
+                            </div>
+                            <div class="button-holder">
+                                <button class="main-btn"><a href="#"><span class="btn-text">book now
+                                        </span></a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tourists">
+            <div class="tourists-bg">
+                <div class="container">
+                    <div class="tourists-holder">
+                        <h3 class="second-title">What Our Tourists Say</h3>
+                        <div class="row">
+                            <div class="sam-holder">
+                                <img src="./src/img/sam-sumon.jpg" alt="">
+                            </div>
+                            <div class="text-holder">
+                                <h4 class="s-title">Sam Sumon</h4>
+                                <p class="paragraph"> <i class="icon-quote-left"></i> I must explain to you how all this
+                                    mistaken idea of account to
+                                    denouncinpleasure and praising pain But I must explain to you how all this mistaken
+                                    idea of account to nai denouncing pleasure and praising pain was account born and I
+                                    account will give you a complete account of the system was account born and I
+                                    account will give you a nai the complete account of the system</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -142,30 +197,31 @@
     </main>
 
     <footer class="footer">
-
-        <div class="footer-holder">
-            <div class="footer-heading-holder">
-                <span class="need-project">Need a project?</span>
-                <span class="tel">(239) 555-0108</span>
-                <span class="email">tanya.hill@example.com</span>
+        <div class="container">
+            <div class="footer-holder">
+                <div class="footer-img-holder">
+                    <a href="#"><img src="./src/img/logo.svg" alt="footer logo"></a>
+                </div>
+                <strong class="footer-pseudo-title">Safe Travel Anywhere</strong>
+                <div class="socials">
+                    <div class="social-holder">
+                        <a href="https://www.facebook.com/"><i class="icon-facebook-f"></i></a>
+                    </div>
+                    <div class="social-holder">
+                        <a href="https://twitter.com/?lang=uk"><i class="icon-twitter"></i></a>
+                    </div>
+                    <div class="social-holder">
+                        <a href="https://www.linkedin.com/"><i class="icon-linkedin"></i></a>
+                    </div>
+                    <div class="social-holder">
+                        <a href="https://www.youtube.com/"><i class="icon-youtube"></i></a>
+                    </div>
+                    <div class="social-holder">
+                        <a href="https://ru.pinterest.com/"><i class="icon-pinterest"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="socials">
-                <div class="social-item">
-                    <i class="ig"></i>
-                </div>
-                <div class="social-item">
-                    <i class="fb"></i>
-                </div>
-                <div class="social-item">
-                    <i class="twitter"></i>
-                </div>
-                <div class="social-item">
-                    <i class="linkedin"></i>
-                </div>
-            </div>
-            <span class="rights-reserved">© Copyright Manifest Theme. Allrights reserved</span>
         </div>
-
     </footer>
 </body>
 
