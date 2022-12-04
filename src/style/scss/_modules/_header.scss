@@ -3,6 +3,7 @@
 }
 
 .header-holder {
+    position: relative;
     padding: 30px 10px;
 
     @include media (">=768px") {
@@ -66,6 +67,9 @@
     // burger
 
     .hamb {
+        position: absolute;
+        bottom: 40px;
+        right: 10px;
         cursor: pointer;
         display: flex;
         justify-content: flex-end;

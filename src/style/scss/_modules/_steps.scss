@@ -4,13 +4,13 @@
 
 .img-holder {
     display: none;
-    width: 57%;
+    width: 65%;
 
     @include media (">=1024px") {
         display: block;
         position: absolute;
         top: 18%;
-        left: 21%;
+        left: 17%;
     }
 }
 
@@ -21,15 +21,6 @@
     @include media (">=1024px") {
         padding: 87px 2px 44px;
     }
-
-    @include media (">=1024px") {
-        padding: 87px 2px 0px;
-    }
-
-    @include media (">=1360px") {
-        // padding: 87px 104px 0px;
-    }
-
 }
 
 .icons-holder {
@@ -39,7 +30,6 @@
 
 
     @include media (">=1024px") {
-        padding: 40px 0;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -47,9 +37,9 @@
 }
 
 .icon-holder {
+    background-color: #333333;
+    border-radius: 46px;
     position: relative;
-    overflow: hidden;
-    z-index: 0;
     padding: 30px 0px;
     display: flex;
     flex-direction: column;
