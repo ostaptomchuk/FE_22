@@ -48,12 +48,16 @@ body {
 }
 
 .search-btn {
+    padding-bottom: 15px;
     font-family: 'Aleo';
     font-weight: 400;
     font-size: 14px;
-    line-height: 20px;
     text-transform: uppercase;
     color: #FFFFFF;
+
+    @include media (">=576px") {
+        padding: 0;
+    }
 }
 
 .slider {
