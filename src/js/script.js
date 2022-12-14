@@ -1,25 +1,21 @@
-let name = prompt('What is your name', "");
-let resultName = alert(`Your name is ${name}!`);
+let num1 = 0.1, num2 = 0.2;
+let sumNum = alert(num1 + num2);
 
-const year = 2022;
-let birthYear = prompt('What is your birth year?', "1999");
-let yourAge = alert(`Your age is ${year-birthYear}`);
+let stringNum1 = "1";
+num2 = 2;
+let sumStringToNum = alert(+stringNum1 + num2);
 
-let squareSide = prompt('Type one side of square: ');
-let sumSquare = alert(`Perimether of square is ${4*squareSide}`)
+let flashCapacity = +prompt('Insert capacity of memory:', '8');
+let convertedCapacity = flashCapacity*1024;
+let countOfFiles = alert(`Your memory contains ${convertedCapacity/820} files`);
 
-let radius = prompt('Insert radius of circle:', "");
-let circleArea = 3.14*Math.pow(radius, 2);
-alert(circleArea);
+let cash = +prompt('How many cash in your wallet?');
+let price = +prompt('CHoose price of one bar of chocolate:');
+let chocolateQty = Math.trunc(cash/price);
+let order = alert(`You choose a ${chocolateQty} chocolate (s), so your surplus is ${cash%price}`);
 
-let distance = prompt('Insert distance beetween two distinations: ', '');
-alert(typeof(distance));
-distance *=1000;
-let tripTime = prompt('How fast do you want to get there?(plz type time in minutes)', '');
-let yourSpeed = (distance/tripTime);
-alert(`Your speed is ${yourSpeed}`);
+// 2 && 0 && 3  (0)
 
-const dollar = prompt('type your cash to exchange: ', '');
-const euro = 0.94;
-let exchange = (dollar/euro);
-alert(`Your cash is ${exchange}`);
+// 2 || 0 || 3  (2)
+
+// 2 && 0 || 3  (3)
